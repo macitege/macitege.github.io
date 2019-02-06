@@ -1,7 +1,19 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+
 body {
+  font-family: Montserrat;
   background: #F1A12A;
+  text-align: center;
 }
 
 h1 {
+  color: #EFBE27;
+}
+
+h2 {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 150px;
   color: #EFBE27;
 }
