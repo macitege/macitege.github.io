@@ -54,6 +54,41 @@ h2 {
 .name {
   font-size: 40px;
   line-height: 40px;
+  margin-bottom: 0;
+}
+
+.side-section >.title {
+  margin-top: 0;
+}
+
+.nav-bar {
+  margin-top: 100px;
+}
+
+.nav-bar > ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.side-bar-link {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 45px;
+  text-decoration: none;
+  color: #f4f1ea;
+  padding: 10px;
+  border-radius: 5px;
+  transition: .2s;
+}
+
+.side-bar-link:hover {
+  color: #967EEC;
+  background-color: #f4f1ea;
+}
+.side-bar-link:active {
+  color: #f4f1ea;
+  background-color: #B0A3FE;
 }
 
 .tag-line {
