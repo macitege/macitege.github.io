@@ -1,19 +1,65 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+/* font-family: 'Roboto Mono', monospace; */
 
+html {
+  height: 100vh;
+}
 
 body {
-  font-family: Montserrat;
-  background: #F1A12A;
+  font-family: Montserrat, sans-serif;
+  color: #1A1A1A;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+.main-content {
+  /* flex-grow: 1; */
+  background-image: linear-gradient(135deg, #f4f1ea, #fff);
   text-align: center;
+  width: calc(calc(100vw)*calc(4/5));
+  padding: 0;
+  margin: 0;
+  overflow-x: scroll;
 }
 
-h1 {
-  color: #EFBE27;
+.side-section {
+  /* flex-grow: 1; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #EFBE27;
+  width: calc(calc(100vw)/5);
+  left:0;
+  top: 0;
+  z-index: 2;
+  padding: 20px;
 }
 
-h2 {
+.profile-picture {
+  width: 200px;
+  height: auto;
+}
+
+.name {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.tag-line {
+  font-size: 80px;
+}
+
+.introduction {
+  font-size: 24px;
+}
+
+.figures {
   font-family: 'Roboto Mono', monospace;
-  font-size: 150px;
-  color: #EFBE27;
+  color:  #EFBE27;
+  font-size: 40px;
 }
