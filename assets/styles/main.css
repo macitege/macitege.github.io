@@ -2,13 +2,14 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 /* font-family: 'Roboto Mono', monospace; */
 
+
 html {
   height: 100vh;
 }
 
 body {
   font-family: Montserrat, sans-serif;
-  color: #1A1A1A;
+  color: #1F271B;
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
@@ -17,9 +18,9 @@ body {
   height: 100vh;
 }
 
-h2 {
+/* h2 {
   opacity: .5;
-}
+} */
 
 .main-content {
   background-image: linear-gradient(135deg, #f4f1ea, #fff);
@@ -31,6 +32,7 @@ h2 {
   padding: 20px;
   margin: 0;
   overflow-x: scroll;
+  scroll-behavior: smooth;
 }
 
 .side-section {
@@ -38,7 +40,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   box-shadow: 2px 0 20px rgba(30,30,30,.2);
-  background-image: linear-gradient(-10deg, #F1A12A 50%, #EFBE27 50%);
+  background-image: linear-gradient(-10deg, #EE964B 45%, #F4D35E 0%);
   width: 300px;
   left:0;
   top: 0;
@@ -67,8 +69,10 @@ h2 {
 
 .nav-bar > ul {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
   padding: 0;
-  text-align: center;
 }
 
 .side-bar-link {
@@ -106,8 +110,10 @@ h2 {
   font-size: 4vmin;
 }
 
+/* ABOUT ME SECTION START */
+
 .about-background {
-    background: rgba(239,190,39,.5);
+    background: rgba(247,223,137,.5);
     margin: 100px -20px;
 }
 
@@ -122,7 +128,7 @@ h2 {
 
 .about>.title {
   color: rgba(241,161,42,1);
-  align-self: flex-start;
+  align-self: center;
   margin: 0;
 }
 
@@ -130,3 +136,53 @@ h2 {
   text-align: justify;
   line-height: 25px;
 }
+
+/* ABOUT ME SECTION END */
+
+/* SKILLS SECTION START */
+.skills-background {
+    background: rgba(118, 204, 204, .8);
+    margin: 20px -20px 300px -20px;
+}
+
+.skills {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  padding: 20px;
+}
+
+.skills>.title {
+  color: #f4f1ea;
+  align-self: center;
+  margin: 0;
+}
+
+.skills>.text {
+  text-align: justify;
+  line-height: 25px;
+}
+
+.skills>.content {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.skill {
+  border-radius: 100%;
+  color: #19647E;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin: 10px 20px;
+  background-color: #C2AFF0;
+}
+/* SKILLS SECTION END */
