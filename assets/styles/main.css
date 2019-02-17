@@ -1,7 +1,132 @@
-body {
-  background: #000;
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+/* font-family: 'Roboto Mono', monospace; */
+
+html {
+  height: 100vh;
 }
 
-h1 {
-  color: #FF2734;
+body {
+  font-family: Montserrat, sans-serif;
+  color: #1A1A1A;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+h2 {
+  opacity: .5;
+}
+
+.main-content {
+  background-image: linear-gradient(135deg, #f4f1ea, #fff);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(calc(100vw)*calc(4/5));
+  padding: 20px;
+  margin: 0;
+  overflow-x: scroll;
+}
+
+.side-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 0 20px rgba(30,30,30,.2);
+  background-image: linear-gradient(-10deg, #F1A12A 50%, #EFBE27 50%);
+  width: 300px;
+  left:0;
+  top: 0;
+  z-index: 2;
+  padding: 20px;
+}
+
+.profile-picture {
+  width: 220px;
+  height: auto;
+}
+
+.name {
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 0;
+}
+
+.side-section >.title {
+  margin-top: 0;
+}
+
+.nav-bar {
+  margin-top: 100px;
+}
+
+.nav-bar > ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.side-bar-link {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 45px;
+  text-decoration: none;
+  color: #f4f1ea;
+  padding: 10px;
+  border-radius: 5px;
+  transition: .2s;
+}
+
+.side-bar-link:hover {
+  color: #967EEC;
+  background-color: #f4f1ea;
+}
+.side-bar-link:active {
+  color: #f4f1ea;
+  background-color: #B0A3FE;
+}
+
+.tag-line {
+  font-size: 9vmin;
+  margin: 100px 10px;
+}
+
+.introduction {
+  font-size: 2vmin;
+}
+
+.figures {
+  font-family: 'Roboto Mono', monospace;
+  color:  #EFBE27;
+  font-size: 4vmin;
+}
+
+.about-background {
+    background: rgba(239,190,39,.5);
+    margin: 100px -20px;
+}
+
+.about {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  padding: 20px;
+}
+
+.about>.title {
+  color: rgba(241,161,42,1);
+  align-self: flex-start;
+  margin: 0;
+}
+
+.about>.text {
+  text-align: justify;
+  line-height: 25px;
 }
