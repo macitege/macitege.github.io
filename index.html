@@ -2,29 +2,40 @@
 <html>
   <!-- old name ga-wdi-boston.browser-template -->
     <head>
-      <title>Owl we need is love!</title>
+      <title>M. Ege Ercan | Portfolio</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <link href="assets/styles/main.css"rel="stylesheet" type="text/css">
-      <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
       <script src="bundle.js" type="text/javascript" charset="utf-8" defer></script>
+      <link href="assets/styles/main.css"rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     </head>
+
     <body>
+
       <aside class="side-section">
         <img class="profile-picture" src="./assets/img/profil.png" alt="Profile Picture" tittle="Profile Picture"/>
-        <h1 class="name">M. EGE<br/>ERCAN </h1>
-        <p class="title">Stackful Web Developer</p>
+        <h1 class="name"><strong>M. EGE<br/>ERCAN </strong></h1>
+        <p class="title">Full-Stack Web Developer</p>
 
         <nav class="nav-bar">
           <ul>
             <li class="side-bar-link-container"><a class="side-bar-link" href="#about"> &lt;/&gt; aboutMe</a></li>
-            <li class="side-bar-link-container"><a class="side-bar-link" href="#top"> &lt;/&gt; webProjects</a></li>
-            <li class="side-bar-link-container"><a class="side-bar-link" href="#top"> &lt;/&gt; myResume</a></li>
+            <li class="side-bar-link-container"><a class="side-bar-link" href="#projects"> &lt;/&gt; webProjects</a></li>
+            <li class="side-bar-link-container">
+              <a class="side-bar-link" href="#" data-toggle="modal" data-target="#resumeModal"> &lt;/&gt; myResume</a>
+            </li>
           </ul>
         </nav>
       </aside>
 
       <main class="main-content">
+
         <div id="top">
           <p class="tag-line">I <strong>love</strong> building <em>smart</em> <strong>applications</strong>
           with a beautiful UI <strong>design.</strong></p>
@@ -73,8 +84,66 @@
           </div>
         </div>
 
-        <p>To be continued...</p>
+        <div id="projects" class="projects-background">
+          <!-- <div id="projects" class="projects"> -->
+            <h2 class="title"> Web development projects: </h2>
 
+            <br/>
+
+            <div class="project-1">
+              <h4>Project 1 | Tic Tac Toe</h4>
+              <div><a href="http://tictactoe.macitege.com" target="blank">Visit The Website</a></div>
+              <div><p class="text-project" > An in-browser game built by using HTML, CSS, JavaScript, jQuery, Bootstrap. Players can play games agains A.I., and multiplayer games.</p></div>
+              <div class="project-1-img">
+                <img class="mobile shadow" src="./assets/img/project-tictactoe-screenshot-mobile.png"/>
+                <img class="desktop shadow-lg" src="./assets/img/project-tictactoe-screenshot-desktop.png"/>
+              </div>
+            </div>
+
+            <div class="project-2"></div>
+            <div class="project-3"></div>
+            <div class="project-4"></div>
+          <!-- </div> -->
+        </div>
+
+        <p>To be continued...</p>
       </main>
+
+<!-- RESUME Modal -->
+        <div class="modal fade bd-resume-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+
+            <div class="modal-content">
+              ...
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="resumeModal" tabindex="-1" role="dialog" aria-labelledby="resumeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="resumeModalLabel">myResume</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <object class="resume-frame" data="./assets/img/MEgeErcanResume.pdf"></object>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="modal fade bd-resume-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+
+            <div class="modal-content"> -->
+
+              <!-- <iframe class="resume-frame" src="./assets/img/MEgeErcanResume.pdf"/> -->
+            <!-- </div>
+          </div>
+        </div> -->
+
     </body>
 </html>
