@@ -5,12 +5,13 @@ const Typed = require('typed.js')
 const $ = require('jquery')
 
 $(() => {
-  console.log('Hello, curious mind. How are you? I have been thinking about you.')
-  // console.log('works')
-  // const typed = new Typed('#typed', {
-  //   stringsElement: '#typed-strings',
-  //   typeSpeed: 60
-  // })
+  console.log('ಠ_ಠ Hello..?')
+  const typed = new Typed('#typed', {
+    stringsElement: '#typed-strings',
+    typeSpeed: 60,
+    loop: true,
+    backDelay: 1500
+  })
 })
 
 },{"jquery":2,"typed.js":3}],2:[function(require,module,exports){

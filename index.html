@@ -22,15 +22,17 @@
 
       <script src="bundle.js" type="text/javascript" charset="utf-8" defer></script>
 
-      <link href="assets/styles/main.css"rel="stylesheet" type="text/css">
+      <link href="./assets/styles/main.scss"rel="stylesheet" type="text/css">
       <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+      <link href="./assets/styles/devicons.css" rel="stylesheet" type="text/css"/>
+      <!-- <link href='//cdn.jsdelivr.net/npm/devicons@1.8.0/css/devicons.min.css' rel='stylesheet'> -->
     </head>
 
     <body>
-
+      <a href="#top"><button class="uptop shadow-sm">Go to Top</button></a>
       <aside class="side-section">
         <img class="profile-picture" src="./assets/img/profil.png" alt="Profile Picture" tittle="Profile Picture"/>
-        <h1 class="name"><strong>M. EGE<br/>ERCAN </strong></h1>
+        <h1 class="name">M. EGE<br/>ERCAN</h1>
         <p class="title">Full-Stack Web Developer</p>
 
         <nav class="nav-bar">
@@ -39,6 +41,7 @@
             <li class="side-bar-link-container"><a class="side-bar-link" href="#projects"> &lt;/&gt; webProjects</a></li>
             <li class="side-bar-link-container">
               <a class="side-bar-link" href="#" data-toggle="modal" data-target="#resumeModal"> &lt;/&gt; myResume</a>
+              <!-- <a class="side-bar-link" href="./assets/img/MEgeErcanResume.pdf" target="_blank"> &lt;/&gt; myResume</a> -->
             </li>
           </ul>
         </nav>
@@ -49,11 +52,18 @@
         <div id="top">
           <p class="tag-line">I <strong>love</strong> building <em>smart</em> <strong>applications</strong>
           with a beautiful UI <strong>design.</strong></p>
-        </div>
+
 
         <p class="figures">*"':.\(o_o)/.:'"*</p>
-        <p class="introduction"><em>Welcome!</em> <br/> My name is
-          <strong>EGE</strong>.<br/>And, here is me and my work...</p>
+        <div class="">
+          <div id="typed-strings" style="display:none;">
+            <p><em>Welcome!</em></p>
+            <p>My name is <strong>EGE</strong>.</p>
+            <p>Well, here is me and my work...</p>
+          </div>
+          <span id="typed" class="introduction"></span>
+        </div>
+        </div>
 
         <div class="about-background">
           <div id="about" class="about">
@@ -69,40 +79,42 @@
           <div id="skills" class="skills">
             <h2 class="title"> I can utilize these efficiently: </h2>
             <div class="content">
-              <p class="skill">JavaScript</p>
-              <p class="skill">HTML</p>
-              <p class="skill">CSS</p>
-              <p class="skill">SCSS</p>
-              <p class="skill">Ruby</p>
-              <p class="skill">JavaScript</p>
-              <p class="skill">HTML</p>
-              <p class="skill">CSS</p>
-              <p class="skill">SCSS</p>
-              <p class="skill">Ruby</p>
-              <p class="skill">JavaScript</p>
-              <p class="skill">HTML</p>
-              <p class="skill">CSS</p>
-              <p class="skill">SCSS</p>
-              <p class="skill">Ruby</p>
-              <p class="skill">JavaScript</p>
-              <p class="skill">HTML</p>
-              <p class="skill">CSS</p>
-              <p class="skill">SCSS</p>
-              <p class="skill">Ruby</p>
+              <!-- <div class="row"> -->
+                <p class="skill"><span class="devicons devicons-javascript_badge" style="font-size:2.5em;"></span>&nbsp;JavaScript</p>
+                <p class="skill"><span class="devicons devicons-ruby" style="font-size:3.5em;transform:translateY(-8px)"></span>&nbsp;Ruby</p>
+                <p class="skill">Node.<span class="devicons devicons-nodejs_small" style="font-size:3em;"/></span></p>
+                <p class="skill"><span class="devicons devicons-react" style="font-size:2.5em;"></span>&nbsp;React.js</p>
+              <!-- </div> -->
+              <!-- <div class="row"> -->
+                <p class="skill">HTML<span class="devicons devicons-html5" style="font-size:2.5em;"></span></p>
+                <p class="skill">CSS<span class="devicons devicons-css3" style="font-size:2.5em;"></span></p>
+                <p class="skill"><span class="devicons devicons-sass" style="font-size:5em;"></span></p>
+                <p class="skill"><span class="devicons devicons-jquery" style="font-size:2.5em;"></span>&nbsp;jQuery</p>
+              <!-- </div> -->
+              <!-- <div class="row"> -->
+                <p class="skill"><span class="devicons devicons-ruby_on_rails" style="font-size:2.5em;"></span>&nbsp;Ruby on Rails</p>
+                <p class="skill"><span class="devicons devicons-postgresql" style="font-size:2.5em;"></span>&nbsp;PostgreSQL</p>
+                <p class="skill"><span class="devicons devicons-mongodb" style="font-size:2.5em;"></span>&nbsp;MongoDB</p>
+                <p class="skill">Express<span class="devicons devicons-nodejs_small" style="font-size:2.5em;"/></span></p>
+              <!-- </div> -->
+              <!-- <div class="row"> -->
+                <p class="skill"><span class="devicons devicons-bootstrap" style="font-size:2.5em;"></span>&nbsp;Bootstrap</p>
+                <p class="skill">handlebars</p>
+                <p class="skill"><span class="devicons devicons-git" style="font-size:2.5em;"></span>&nbsp;Git</p>
+                <p class="skill"><span class="devicons devicons-github_alt" style="font-size:2.5em;"></span>&nbsp;GitHub</p>
+              <!-- </div> -->
             </div>
-            <p>... adding more everyday</p>
           </div>
         </div>
 
         <div id="projects" class="projects-background">
-          <!-- <div id="projects" class="projects"> -->
-            <h2 class="title"> Web development projects: </h2>
+            <h2 class="title shadow-lg"> Projects I have done: </h2>
 
             <br/>
 
             <div class="project-1">
               <h4>Project 1 | Tic Tac Toe</h4>
-              <div><a class="source-links" href="http://tictactoe.macitege.com" target="blank">Visit The Website</a> | <a class="source-links" href="https://github.com/macitege/tictactoe-client" target="blank">GitHub Repo</a></div><br/><p>---------------</p>
+              <div><a class="source-links" href="http://tictactoe.macitege.com" target="blank">Visit The Website</a> | <a class="source-links" href="https://github.com/macitege/tictactoe-client" target="blank">GitHub Repo</a></div><br/>
               <div><p class="text-project" > An in-browser game built by using HTML, CSS, JavaScript, jQuery, Bootstrap. Players can play games agains A.I., and multiplayer games.</p></div>
               <div class="project-1-img">
                 <img class="mobile" src="./assets/img/project-tictactoe-screenshot-mobile.png"/>
@@ -110,10 +122,29 @@
               </div>
             </div>
 
-            <div class="project-2"></div>
-            <div class="project-3"></div>
+            <div class="project-2">
+              <h4>Project 2 | Rainbow's BFF</h4>
+              <div><a class="source-links" href="http://colors.macitege.com" target="blank">Visit The Website</a> | <a class="source-links" href="https://github.com/macitege/color-sets-client" target="blank">GitHub Repo</a></div>
+              <div><p class="text-project"> Built by using HTML, CSS, Handlebars, jQuery, Javascript, and Ruby on Rails for creating API. The user can generate	random color themes consist of 5 distinct colors, and save them in their color set library. </p></div>
+              <div class="project-2-img">
+                <img class="mobile" src="./assets/img/project-colors-screenshot-mobile.png"/>
+                <img class="desktop shadow" src="./assets/img/project-colors-screenshot-desktop.png"/>
+              </div>
+            </div>
+
+            <div class="project-3">
+              <h4>Project 3 | Stumblr - Blog</h4>
+              <div><a class="source-links" href="https://hex-llc.github.io/stumblr-client/" target="blank">Visit The Website</a> | <a class="source-links" href="https://github.com/hex-llc/stumblr-client" target="blank">GitHub Repo</a></div>
+              <div><p class="text-project" >
+              A micro blogging app that built by using HTML, CSS, Handlebars, jQuery, Javascript for front end, and Express.js and MongoDB for creating the API.  This is a CMS website where users create their own blogs.
+              </p></div>
+              <div class="project-3-img">
+                <!-- <img class="mobile" src="./assets/img/project-blog-screenshot-mobile.png"/> -->
+                <img class="desktop shadow" src="./assets/img/project-blog-screenshot-desktop.png"/>
+              </div>
+            </div>
+
             <div class="project-4"></div>
-          <!-- </div> -->
         </div>
 
         <p>To be continued...</p>
@@ -142,7 +173,8 @@
                 </button>
               </div>
               <div class="modal-body">
-                <object class="resume-frame" data="./assets/img/MEgeErcanResume.pdf"></object>
+                <!-- <object class="resume-frame" data="./assets/img/MEgeErcanResume.pdf"></object> -->
+                <iframe src="https://drive.google.com/file/d/1KSprj_r9tcKOwjO83ZxtbJ2Wlwt2wUWw/preview" class="resume"></iframe>
               </div>
             </div>
           </div>
