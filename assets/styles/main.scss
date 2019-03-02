@@ -28,7 +28,7 @@ body {
   width: 80px;
   color: #f4f1ea;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 100;
   z-index: 999;
   // text-align: center;
 }
@@ -108,8 +108,8 @@ body {
 
 .side-bar-link {
   text-align: center;
+  text-decoration: underline;
   font-size: 18px;
-  font-weight: 600;
   line-height: 45px;
   color: #f4f1ea;
   padding: 10px;
@@ -128,12 +128,34 @@ body {
   background-color: #B0A3FE;
 }
 
+.contact-links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-links > a > .img {
+  width: 40px;
+  height: auto;
+  margin: 10px;
+  opacity: 0.5;
+  transition: all 0.1s ease-out;
+}
+
+.contact-links > a > .img:hover {
+  opacity: 1;
+}
+
 .tag-line {
   font-size: 70px;
   margin: 140px 30px 0 30px;
   display: block;
   height: calc(calc(100vh)/1.5);
   max-width: 980px;
+}
+
+.tag-strong {
+  font-weight: 600;
 }
 
 .introduction {
@@ -202,7 +224,7 @@ body {
 .skills>.title {
   color: #19647E;
   align-self: center;
-  margin: 0;
+  margin-bottom: 15px;
 }
 
 .skills>.text {
