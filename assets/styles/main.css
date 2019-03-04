@@ -69,7 +69,7 @@ body {
   top: 0;
   z-index: 2;
   padding: 20px;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 
 .profile-picture {
@@ -354,3 +354,6 @@ body {
   background-color: #C2AFF0;
 }
 /* PROJECTS SECTION END */
+
+/* MEDIA QUERIES */
+/* END - MEDIA QUERIES */
