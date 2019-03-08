@@ -140,35 +140,74 @@ footer {
 .contact-wrapper {
   display: flex;
   justify-content: space-around;
-  font-weight: 200;
+  font-weight: 600;
 }
 .contact-info {
-  background-color: rgba(255, 255, 255, 0.2);
-  font-size: 25px;
-  border-radius: 10px;
+  border-radius: 100%;
   width: 350px;
-  height: 304px;
+  height: 350px;
+  padding: 35px;
+  font-size: 25px;
   text-align: center;
   padding: 35px;
 }
 
-.contact-form {
-  background-color: rgba(255, 255, 255, 0.2);
-  color: rgba(255, 255, 255, 1);
-  border-radius: 10px;
-  padding: 35px;
+.mail-link {
+  font-size: 22px;
+  font-weight: 200;
+  color: #745CCB;
+}
+
+.illustration-wrapper {
+  background-color: #FD5a;
+  box-shadow: 0 0 50px #FD5f;
+  border-radius: 100%;
   width: 350px;
-  opacity: 0.75;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  height: 350px;
+  padding: 35px;
+}
+
+.illustration-wrapper::after {
+  position: absolute;
+  content: '';
+  background-color: #97Ec;
+  box-shadow: 0 0 50px #97Ef;
+  border-radius: 100%;
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  transform: translate(150px, -50px);
+}
+
+.illustration-wrapper::before {
+  position: absolute;
+  content: '';
+  background-color: #BF9a;
+  box-shadow: 0 0 50px #BF9f;
+  border-radius: 100%;
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  transform: translate(80px, 80px);
+}
+
+
+.illustration {
+  position: absolute;
+  height: 400px;
+  width: auto;
+  z-index: 2;
+  transform: translate(50px, -70px)
 }
 
 .foot {
   display: inline-block;
-  width: 200px;
+  width: 310px;
   text-align: left;
   color: rgba(255, 255, 255, 0.5);
+  font-weight: 200;
+  font-size: 28px;
+  transform: translateX(50px)
 }
 
 .foot:hover {
@@ -215,16 +254,13 @@ footer {
 }
 
 .side-bar-link {
-  /* background-color: #FFB35E; */
   background-image: linear-gradient(to top, #EE964B, #FFB35E);
   text-align: center;
-  /* text-decoration: underline; */
   font-size: 18px;
   line-height: 45px;
   color: #f4f1ea;
   padding: 10px;
   border-radius: 5px;
-  /* transition: .2s; */
   display: block;
   width: 90%:
 }
@@ -247,11 +283,12 @@ footer {
 }
 
 .contact-img {
-  width: 40px;
+  width: 35px;
   height: auto;
-  margin: 10px;
   opacity: 0.5;
   transition: all 0.1s ease-out;
+  transform: translateY(-2px);
+  margin: 5px;
 }
 
 .contact-img:hover {
@@ -597,9 +634,58 @@ footer {
     margin: 10px;
   }
 
+  .contact-wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 540px;
+  }
+  .contact-info {
+    position: absolute;
+    height: auto;
+    margin: 115px 5px 5px 5px;
+    font-size: 20px;
+    padding: 5px;
+    bottom: 180px;
+  }
+
+  .illustration-wrapper {
+    width: 230px;
+    height: 230px;
+    padding: 0;
+    transform: translate(0px, 80px);
+    background-color: #FD5a;
+    box-shadow: none;
+  }
+
+  .illustration-wrapper::after {
+    display: none;
+    width: 180px;
+    height: 180px;
+    padding: 0;
+    transform: translate(140px, 0px);
+  }
+
+  .illustration-wrapper::before {
+    display: none;
+    width: 180px;
+    height: 180px;
+    padding: 0;
+    transform: translate(80px, 100px);
+  }
+
+
+  .illustration {
+    height: 300px;
+    width: auto;
+    z-index: 2;
+    transform: translate(-20px, -20px)
+  }
+
 }
 
 @media (max-width: 570px) {
+   /*todo: footer is not good for iphone screen */
   html {
     height: 100vh;
     width: 100vw;
@@ -793,19 +879,58 @@ footer {
     height: 540px;
   }
   .contact-info {
-    width: 300px;
-    height: 280px;
-    margin: 5px 5px 5px 5px;
+    position: absolute;
+    height: auto;
+    margin: 115px 5px 5px 5px;
     font-size: 20px;
     padding: 5px;
+    bottom: 100px;
+    width: 200px;
   }
 
-  .contact-form {
-    width: 300px;
-    height: 320px;
-    margin: 5px;
-    padding: 10px;
+  .illustration-wrapper {
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    transform: translate(0px, 80px);
+    background-color: #FD5a;
+    box-shadow: none;
   }
+
+  .illustration-wrapper::after {
+    display: none;
+    width: 180px;
+    height: 180px;
+    padding: 0;
+    transform: translate(140px, 0px);
+  }
+
+  .illustration-wrapper::before {
+    display: none;
+    width: 180px;
+    height: 180px;
+    padding: 0;
+    transform: translate(80px, 100px);
+  }
+
+
+  .illustration {
+    height: 250px;
+    width: auto;
+    z-index: 2;
+    transform: translate(-20px, -20px)
+  }
+
+  .mail-link {
+    font-size: 16px;
+  }
+
+  .foot {
+    font-size: 16px;
+    width: auto;
+    transform: none;
+  }
+
 }
 
 @media (max-height: 670px) {
@@ -827,6 +952,10 @@ footer {
     width: auto;
     height: 200px;
     margin: 10px;
+  }
+ /*todo: when screen is not high enough */
+  .illustration {
+    display: none;
   }
 }
 
