@@ -1,0 +1,82 @@
+.main-content {
+  /* flex-grow: 4; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  margin-left: 300px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  width: calc(calc(100vw) - 300px);
+  z-index: 1;
+}
+
+.side-section {
+  position: fixed;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: space-between;
+  box-shadow: 2px 0 20px rgba(30,30,30,.2);
+  background-image: linear-gradient(-10deg, #EE964B 60%, #F4D35E 0%);
+  width: 300px;
+  height: 100vh;
+  left:0;
+  top: 0;
+  z-index: 6;
+  padding: 20px;
+  transition: width 0.5s ease;
+  /* THIS SHOWS SCROLL BARS IN SIDEBAR IN SOME BROWSERS overflow: scroll; */
+}
+
+@media (max-width:1030px) {
+
+  .main-content {
+    width: 100%;
+    margin: 0;
+    height: auto;
+    overflow-x: hidden;
+    margin-top: 200px;
+  }
+
+  .side-section {
+    /* position: sticky;
+    top: -169px; */
+    position: absolute;
+    flex-grow: none;
+    height: 200px;
+    width: 100%;
+  }
+
+
+}
+
+@media (max-width: 570px) {
+.main-content {
+    flex-grow: none;
+    width: 100%;
+    margin: 0;
+    height: auto;
+    overflow-y: visible;
+    overflow-x: hidden;
+    margin-top: 200px;
+  }
+
+  .side-section {
+    position: absolute;
+    flex-grow: 0;
+    height: 230px;
+    width: 100%;
+    padding: 2px;
+  }
+}
+
+@media (max-height: 670px) {
+  .side-section {
+    flex-direction: row;
+    align-items: center;
+  }
+}

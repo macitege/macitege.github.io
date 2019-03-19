@@ -6,6 +6,18 @@ const $ = require('jquery')
 $('.uptop').hide()
 
 $(() => {
+  $('#hamburger, #close-img, .side-bar-link').on('click', () => {
+    $('#side-section').toggleClass('expand-width')
+    $('#nav-bar').toggleClass('appear')
+    $('.menu-img').toggleClass('appear')
+    $('#close-img').toggleClass('appear')
+  })
+
+  // $('.side-bar-link').on('click', () => {
+  //   $('#side-section').toggleClass('expand-width')
+  //   $('#nav-bar').toggleClass('appear')
+  // })
+
   $('.uptop').on('click', () => {
     $(window).scrollTop()
     $('.main-content').scrollTop()

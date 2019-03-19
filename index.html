@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-  <!-- old name ga-wdi-boston.browser-template -->
     <head>
       <title>M. Ege Ercan | Portfolio</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,36 +21,50 @@
 
       <script src="bundle.js" type="text/javascript" charset="utf-8" defer></script>
 
-      <link href="./assets/styles/main.css"rel="stylesheet" type="text/css">
+      <link href="./assets/styles/main.css" rel="stylesheet" type="text/css">
       <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,900" rel="stylesheet">
       <!-- <link href="./assets/styles/devicons.css" rel="stylesheet" type="text/css"/> -->
       <link href='//cdn.jsdelivr.net/npm/devicons@1.8.0/css/devicons.min.css' rel='stylesheet'>
     </head>
 
-    <body id="top">
+    <body>
+      <div id="top"></div>
       <a href="#top" class="uptop"><img src="./assets/img/up-arrow.png" class="img"/><span class="totop">To Top</span></a>
 
-      <aside class="side-section">
-        <img class="profile-picture" src="./assets/img/profil.png" alt="Profile Picture" tittle="Profile Picture"/>
-        <div  class="name"><h1>M. EGE</h1> <h1>ERCAN</h1></div>
-        <p class="title">Full-Stack Web Developer</p>
+      <aside id="side-section" class="side-section">
+        <div class="side-section-info">
+          <img class="profile-picture" src="./assets/img/profil.png" alt="Profile Picture" tittle="Profile Picture"/>
+          <div  class="name"><h1>M. EGE</h1> <h1>ERCAN</h1></div>
+          <p class="title">Full-Stack Web Developer</p>
 
-        <div class="contact-links">
-          <a target="_blank" href="https://github.com/macitege"><img class="contact-img" src="./assets/img/github.png" alt="Link to Github Account"/></a>
-          <a target="_blank" href="https://www.linkedin.com/in/macitegeercan/"><img class="contact-img" src="./assets/img/linkedin.png" alt="Link to Linked In Account"/></a>
+          <div>
+            <button id="hamburger" class="hamburger menu-img appear"><img src="./assets/img/menu.png" alt="menu"/></button>
+          </div>
         </div>
 
-        <nav class="nav-bar">
+        <button id="close-img" class="hamburger close-img"><img src="./assets/img/close.png" alt="close menu button"/></button>
+
+
+        <nav id="nav-bar" class="nav-bar">
           <ul>
-            <li class="side-bar-link-container"><a class="side-bar-link waves-effect waves-purple" href="#about"> &lt;/&gt; aboutMe</a></li>
+            <li class="side-bar-link-container"><a class="side-bar-link" href="#about"> &lt;/&gt; aboutMe</a></li>
             <li class="side-bar-link-container"><a class="side-bar-link" href="#projects"> &lt;/&gt; webProjects</a></li>
             <li class="side-bar-link-container">
               <a class="side-bar-link" href="#" data-toggle="modal" data-target="#resumeModal"> &lt;/&gt; myResume</a>
-              <!-- <a class="side-bar-link" href="./assets/img/MEgeErcanResume.pdf" target="_blank"> &lt;/&gt; myResume</a> -->
             </li>
             <li class="side-bar-link-container"><a class="side-bar-link" href="#footer"> &lt;/&gt; contact</a></li>
           </ul>
         </nav>
+        <div class="side-contacts-wrapper">
+        <div class="contact-links">
+            <a target="_blank" href="https://github.com/macitege"><img class="contact-img" src="./assets/img/github.png" alt="Link to Github Account"/></a>
+            <a href="mailto:macitegeercan@gmail.com"><img class="contact-img" src="./assets/img/mail.png" alt="Link to Linked In Account"/></a>
+            <a target="_blank" href="https://www.linkedin.com/in/macitegeercan/"><img class="contact-img" src="./assets/img/linkedin.png" alt="Link to Linked In Account"/></a>
+          </div>
+          <p class="title" style="text-align: center; font-size: 14px; color:#ffea">Designed & Coded by
+            <br/>M.Ege Ercan
+          </p>
+        </div>
       </aside>
 
       <main class="main-content">
@@ -122,7 +135,21 @@
             <div class="project-1">
               <h4>Project 1 | Tic Tac Toe</h4>
               <div><a class="source-links" href="http://tictactoe.macitege.com" target="blank">Visit The Website</a> | <a class="source-links" href="https://github.com/macitege/tictactoe-client" target="blank">GitHub Repo</a></div><br/>
-              <div><p class="text-project" > An in-browser game built by using HTML, CSS, JavaScript, jQuery, Bootstrap. Players can play games agains A.I., and multiplayer games.</p></div>
+              <div class="text-project"><p>
+                This is my first front-end project and I am very proud of it. Since I am very interested in learning how to code artificial intelligence,
+                this project has been a great way to practice it. Because, I have built a tictactoe game that you can play against the computer - indeed,
+                it is an easy JavaScript logic, but it is a good one. <br/>
+                This is an in-browser game built by using HTML, CSS, JavaScript, jQuery, Bootstrap. Players can play games agains A.I., and multiplayer games.
+                Additionally, users can create accounts and display their past games.
+              </p>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+                <li>Bootstrap</li>
+              </ul>
+              </div>
               <div class="project-1-img">
                 <img class="mobile" src="./assets/img/project-tictactoe-screenshot-mobile.png"/>
                 <img class="desktop shadow" src="./assets/img/project-tictactoe-screenshot-desktop.png"/>
@@ -132,7 +159,19 @@
             <div class="project-2">
               <h4>Project 2 | Rainbow's BFF</h4>
               <div><a class="source-links" href="http://colors.macitege.com" target="blank">Visit The Website</a> | <a class="source-links" href="https://github.com/macitege/color-sets-client" target="blank">GitHub Repo</a></div>
-              <div><p class="text-project"> Built by using HTML, CSS, Handlebars, jQuery, Javascript, and Ruby on Rails for creating API. The user can generate	random color themes consist of 5 distinct colors, and save them in their color set library. </p></div>
+              <div class="text-project"><p> I have always been into design and art, and one of the challenges when creating a new design is finding new color ideas. Therefore, I wanted to help designers
+                to find new color scheme ideas with this web application. <br/><br/> I have inspired by the best color generator tools on the web while designing this web app. This is a Single Page Application website
+                that creates randomly generated color palettes consist of 5 colors. The user can create an account, and save, edit or delete their palettes. Additionally, the user can gather RGB and HEX values
+                of each color. I have used HTML5, CSS3, jQuery for the front end and Ruby on Rails for the back end structure. The random color generator that creates each color is written in JavaScript by me. </p>
+                <ul>
+                  <li>Ruby on Rails</li>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>JavaScript</li>
+                  <li>jQuery</li>
+                  <li>Bootstrap</li>
+                </ul>
+              </div>
               <div class="project-2-img">
                 <img class="mobile" src="./assets/img/project-colors-screenshot-mobile.png"/>
                 <img class="desktop shadow" src="./assets/img/project-colors-screenshot-desktop.png"/>
@@ -142,16 +181,54 @@
             <div class="project-3">
               <h4>Project 3 | Stumblr - Blog</h4>
               <div><a class="source-links" href="https://hex-llc.github.io/stumblr-client/" target="blank">Visit The Website</a> | <a class="source-links" href="https://github.com/hex-llc/stumblr-client" target="blank">GitHub Repo</a></div>
-              <div><p class="text-project" >
-              A micro blogging app that built by using HTML, CSS, Handlebars, jQuery, Javascript for front end, and Express.js and MongoDB for creating the API.  This is a CMS website where users create their own blogs.
-              </p></div>
+              <div class="text-project"><p>
+              And here is Stumblr... The micro-blogging site that I have contributed its creation process.
+              This is a team project that I and my team have created during General Assembly Boston's Web Development Immersive Bootcamp program.
+              Stumblr is a microblogging website created by me,
+              <a href="https://rogerdunnhawaii.github.io/portfolio/">@rogerdunnhawaii</a>,
+              <a href="https://github.com/MaxxKowalik">@MaxxKowalik</a>, and
+              <a target="_blank" href="https://discocisco.github.io">@discocisco</a>. The back-end was developed using combination of Express.js, Mongoose, and MongoDB. The front-end was developed using JavaScript and jQuery commands to communicate with the Stumblr.
+              In order to create a blog or comment, users will have to create an account and then sign in. All accounts, blogs, and comments are stored within the API developed in the back-end.
+                </p>
+                <ul>
+                  <li>Express.js</li>
+                  <li>Mongoose</li>
+                  <li>MongoDB</li>
+                  <li>Bootstrap</li>
+                  <li>JavaScript</li>
+                  <li>jQuery</li>
+                </ul>
+              </div>
               <div class="project-3-img">
                 <!-- <img class="mobile" src="./assets/img/project-blog-screenshot-mobile.png"/> -->
                 <img class="desktop shadow" src="./assets/img/project-blog-screenshot-desktop.png"/>
               </div>
             </div>
 
-            <div class="project-4"></div>
+            <div class="project-4">
+              <h4>Project 4 | F.O.F. Boston </h4>
+              <div><a class="source-links" href="http://fof.macitege.com" target="blank">Visit The Website</a> | <a class="source-links" href="https://github.com/macitege/fof-client" target="blank">GitHub Repo</a></div>
+              <div class="text-project"><p>
+                F.O.F. | Boston , stands for <em>Free Offerings of Food</em>, is an application where people can create posts for their extra food that they dont want to throw away.
+                So that, people who helps homeless people can find free food, collect them and give them to whoever in need.<br/>
+                Focus of this project for me was creating a <strong>React</strong> app and integrating third party apis to it, as a matter of fact, F.O.F. uses <strong>Google Maps API</strong> and <strong>Google Geocoding API</strong> to locate user's address on the map.
+                Technologies used are:
+              </p>
+              <ul>
+                <li>React.js</li>
+                <li>Sass (SCSS)</li>
+                <li>Axios</li>
+                <li>Bootstrap</li>
+                <li>Git</li>
+                <li>Google Maps API</li>
+                <li>Google Geocoding API</li>
+              </ul>
+              </div>
+              <div class="project-2-img">
+                <img class="mobile" src="./assets/img/project-fof-screenshot-mobile.png"/>
+                <img class="desktop shadow" src="./assets/img/project-fof-screenshot-desktop.png"/>
+              </div>
+            </div>
         </div>
 
         <div id="to-top-btn" class="to-top-btn">
@@ -197,7 +274,7 @@
               </div>
               <div class="modal-body">
                 <!-- <object class="resume-frame" data="./assets/img/MEgeErcanResume.pdf"></object> -->
-                <iframe src="https://drive.google.com/file/d/1XXr_mi2lM6Y6Hi5Yg_KkLPq11laCufbB/preview" class="resume"></iframe>
+                <iframe src="https://drive.google.com/file/d/1utTXnXmoC-1lzyuleMQ2UzO635xtuVmZ/preview" class="resume"></iframe>
               </div>
             </div>
           </div>
