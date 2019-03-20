@@ -11,14 +11,6 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-      <!-- MATERIALIZE -->
-      <!-- Compiled and minified CSS -->
-      <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
-
-      <!-- Compiled and minified JavaScript -->
-      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
-
-
       <script src="bundle.js" type="text/javascript" charset="utf-8" defer></script>
 
       <link href="./assets/styles/main.css" rel="stylesheet" type="text/css">
@@ -38,11 +30,11 @@
           <p class="title">Full-Stack Web Developer</p>
 
           <div>
-            <button id="hamburger" class="hamburger menu-img appear"><img src="./assets/img/menu.png" alt="menu"/></button>
+            <button id="open-menu-button" class="open-menu-button appear"><img class="contact-img" src="./assets/img/menu.png" alt="menu"/></button>
           </div>
         </div>
 
-        <button id="close-img" class="hamburger close-img"><img src="./assets/img/close.png" alt="close menu button"/></button>
+        <button id="close-menu-button" class="close-menu-button"><img class="contact-img" src="./assets/img/close.png" alt="close menu button"/></button>
 
 
         <nav id="nav-bar" class="nav-bar">
@@ -58,10 +50,10 @@
         <div class="side-contacts-wrapper">
         <div class="contact-links">
             <a target="_blank" href="https://github.com/macitege"><img class="contact-img" src="./assets/img/github.png" alt="Link to Github Account"/></a>
-            <a href="mailto:macitegeercan@gmail.com"><img class="contact-img" src="./assets/img/mail.png" alt="Link to Linked In Account"/></a>
             <a target="_blank" href="https://www.linkedin.com/in/macitegeercan/"><img class="contact-img" src="./assets/img/linkedin.png" alt="Link to Linked In Account"/></a>
+            <a href="mailto:macitegeercan@gmail.com"><img class="contact-img" src="./assets/img/mail.png" alt="Link to Linked In Account"/></a>
           </div>
-          <p class="title" style="text-align: center; font-size: 14px; color:#ffea">Designed & Coded by
+          <p class="credit" style="text-align: center; font-size: 14px; color:#ffea">Designed & Coded by
             <br/>M.Ege Ercan
           </p>
         </div>
@@ -211,7 +203,7 @@
               <div class="text-project"><p>
                 F.O.F. | Boston , stands for <em>Free Offerings of Food</em>, is an application where people can create posts for their extra food that they dont want to throw away.
                 So that, people who helps homeless people can find free food, collect them and give them to whoever in need.<br/>
-                Focus of this project for me was creating a <strong>React</strong> app and integrating third party apis to it, as a matter of fact, F.O.F. uses <strong>Google Maps API</strong> and <strong>Google Geocoding API</strong> to locate user's address on the map.
+                Focus of this project for me was creating a <strong style="font-weight: 600">React</strong> app and integrating third party apis to it, as a matter of fact, F.O.F. uses <strong style="font-weight: 600">Google Maps API</strong> and <strong style="font-weight: 600">Google Geocoding API</strong> to locate user's address on the map.
                 Technologies used are:
               </p>
               <ul>
@@ -241,11 +233,14 @@
             <img class="illustration" src="./assets/img/ege_profile_drawing.png" alt="Illustrated Profile Picture"/>
           </div>
           <div class="contact-info">
-            Macit Ege Ercan <hr/>
-            <a class="mail-link" target="_blank" href="mailto:contact@macitege.com">&nbsp;<span class="mail-link">contact@macitege.com</span></a>
+            <h3 style="align-self: center">Macit Ege Ercan</h3>
+<!-- <a class="mail-link" target="_blank" href="mailto:contact@macitege.com">&nbsp;<span class="mail-link">contact@macitege.com</span></a> -->
             <hr/>
-            <a class="foot" target="_blank" href="https://github.com/macitege"><img class="contact-img" src="./assets/img/github.png" alt="Link to Github Account"/>&nbsp;&nbsp;&nbsp;GitHub</a> <br />
-            <a class="foot" target="_blank" href="https://www.linkedin.com/in/macitegeercan/"><img class="contact-img" src="./assets/img/linkedin.png" alt="Link to Linked In Account"/>&nbsp;&nbsp;&nbsp;LinkedIn</a>
+            <a class="foot" href="mailto:macitegeercan@gmail.com"><img class="contact-img" src="./assets/img/mail.png" alt="Link for mailing me"/> <span>&nbsp;&nbsp;Mail me?</span></a>
+            <a class="foot" target="_blank" href="https://github.com/macitege"><img class="contact-img" src="./assets/img/github.png" alt="Link to Github Account"/>&nbsp;&nbsp;&nbsp;My GitHub</a>
+            <a class="foot" target="_blank" href="https://www.linkedin.com/in/macitegeercan/"><img class="contact-img" src="./assets/img/linkedin.png" alt="Link to Linked In Account"/>&nbsp;&nbsp;&nbsp;My LinkedIn</a>
+            <a class="foot" href="#" data-toggle="modal" data-target="#resumeModal"> <img class="contact-img" src="./assets/img/resume.png" alt="See my resume link"/>&nbsp;&nbsp;See My Resume</a>
+            <a class="foot" target="_blank" href="https://www.youtube.com/user/macitegeercan"><img class="contact-img" src="./assets/img/youtube-logo.png" alt="Link to my youtube channel"/>&nbsp;&nbsp;Me play drums!</a>
 
           </div>
         </div>

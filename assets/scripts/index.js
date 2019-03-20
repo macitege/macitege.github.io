@@ -6,11 +6,14 @@ const $ = require('jquery')
 $('.uptop').hide()
 
 $(() => {
-  $('#hamburger, #close-img, .side-bar-link').on('click', () => {
-    $('#side-section').toggleClass('expand-width')
-    $('#nav-bar').toggleClass('appear')
-    $('.menu-img').toggleClass('appear')
-    $('#close-img').toggleClass('appear')
+  $('#open-menu-button, #close-menu-button, .side-bar-link').on('click', () => {
+    if (window.innerHeight > 520) {
+      $('#side-section').toggleClass('expand-height')
+    } else {
+      $('#side-section').toggleClass('expand-width')
+    }
+    $('#nav-bar, #open-menu-button').toggleClass('appear')
+    $('#open-menu-button, .credit').toggleClass('appear')
   })
 
   // $('.side-bar-link').on('click', () => {
