@@ -5,14 +5,26 @@ const Typed = require('typed.js')
 const $ = require('jquery')
 
 $('.uptop').hide()
+$('#close-menu-button').hide()
 
 $(() => {
   $('#open-menu-button, #close-menu-button, .side-bar-link').on('click', () => {
-    if (window.innerHeight > 520) {
+    if (window.innerHeight > 520 || window.innerWidth <= 736) {
       $('#side-section').toggleClass('expand-height')
+      $('#open-menu-button').toggleClass('appear')
+      $('#close-menu-button').toggleClass('appear')
+      $('#curtain').toggleClass('curtain-on')
     } else {
       $('#side-section').toggleClass('expand-width')
     }
+
+    // if (window.innerWidth <= 736) {
+    //   $('#side-section').toggleClass('expand-height')
+    //   $('#open-menu-button').toggleClass('appear')
+    //   $('#close-menu-button').toggleClass('appear')
+    //   // $('#curtain').toggleClass('curtain-on')
+    // }
+
     $('#nav-bar, #open-menu-button').toggleClass('appear')
     $('#open-menu-button, .credit').toggleClass('appear')
   })

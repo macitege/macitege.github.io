@@ -1,5 +1,4 @@
 .main-content {
-  /* flex-grow: 4; */
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -15,7 +14,6 @@
 
 .side-section {
   position: fixed;
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
   align-items: space-between;
@@ -27,8 +25,8 @@
   left:0;
   top: 0;
   z-index: 6;
-  padding: 20px;
-  transition: width 0.5s ease;
+  /* padding: 20px; */
+  transition: 0.5s ease;
   /* THIS SHOWS SCROLL BARS IN SIDEBAR IN SOME BROWSERS overflow: scroll; */
 }
 
@@ -46,7 +44,11 @@
     /* position: sticky;
     top: -169px; */
     position: absolute;
-    flex-grow: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
     height: 200px;
     width: 100%;
   }
@@ -56,7 +58,6 @@
 
 @media (max-width: 570px) {
 .main-content {
-    flex-grow: none;
     width: 100%;
     margin: 0;
     height: auto;
@@ -66,15 +67,11 @@
   }
 
   .side-section {
-    position: absolute;
-    flex-grow: 0;
     height: 230px;
-    width: 100%;
-    padding: 2px;
   }
 }
 
-@media (max-height: 670px) {
+@media (max-height: 520px) {
   .side-section {
     flex-direction: row;
     align-items: center;

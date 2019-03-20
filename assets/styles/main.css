@@ -95,7 +95,7 @@ body {
 
 .tag-line {
   font-size: 70px;
-  margin: 140px 30px 0 30px;
+  margin: 140px 30px 10px 30px;
   display: block;
   height: calc(calc(100vh)/1.5);
   max-width: 980px;
@@ -359,7 +359,7 @@ body {
 
 @media (max-width: 570px) {
    /*todo: footer is not good for iphone screen */
-  html {
+  /* html {
     height: 100vh;
     width: 100vw;
     margin: 0;
@@ -371,7 +371,7 @@ body {
     padding: 0;
     scroll-behavior: smooth;
     width: 100%;
-  }
+  } */
   .tag-line {
     font-size: 35px;
     margin: 45px 30px 0 30px;
@@ -392,19 +392,6 @@ body {
     font-size: 20px;
   }
 
-  /* .text-project {
-    width: auto;
-    margin: 10px;
-  } */
-
-  .project-1 {
-    padding: 40px 20px 20px 20px;
-  }
-  .project-1-img {
-    flex-direction: column;
-    align-items: center;
-  }
-
   .desktop {
     width: auto;
     height: 230px;
@@ -414,6 +401,7 @@ body {
   .mobile {
     display: none;
   }
+
   .skill {
     margin: 2px;
   }
@@ -453,13 +441,9 @@ body {
   .title {
     color: #f4f1ea;
   }
-
-  .uptop:hover {
-    color: black;
-  }
 }
 
-@media (max-height: 670px) {
+@media (max-height: 520px) {
   .tag-line {
     font-size: 35px;
     margin: 45px 30px 0 30px;
