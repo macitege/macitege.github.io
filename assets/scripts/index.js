@@ -1,5 +1,9 @@
 'use strict'
 
+// DONT FORGET TO RUN IN THE SHELL THIS:
+// browserify ./assets/scripts/index.js -o bundle.js
+// TO BUNDLE THIS FILE BEFORE DISPLAYING THE CHANGES
+
 const Typed = require('typed.js')
 const $ = require('jquery')
 

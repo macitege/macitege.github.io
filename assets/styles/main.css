@@ -319,6 +319,10 @@ body {
 }
 /* PROJECTS SECTION END */
 
+.html5-video-player {
+  background-color: #f4f1ea;
+}
+
 /* MEDIA QUERIES */
 @media (max-width:1030px) {
 
